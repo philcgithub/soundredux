@@ -2,4 +2,4 @@
 # URL: https://app.rollout.io/ex/5ea2cfeec5d49a3e799da55f
 type: experiment
 flag: showoverride
-value: true
+value: false

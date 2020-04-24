@@ -5,5 +5,5 @@ flag: repeat
 conditions:
   - group:
       name: Onlyme
-    value: false
-value: true
+    value: true
+value: false

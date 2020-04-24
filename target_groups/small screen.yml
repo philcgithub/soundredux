@@ -4,4 +4,4 @@ description: small screen <=300
 conditions:
   - operator: lte
     property: rox.screen_width
-    operand: 300
+    operand: 1000

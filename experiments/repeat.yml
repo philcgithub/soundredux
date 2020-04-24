@@ -2,8 +2,4 @@
 # URL: https://app.rollout.io/ex/5ea2b9f8a940f0d70a0296e8
 type: experiment
 flag: repeat
-conditions:
-  - group:
-      name: Onlyme
-    value: true
 value: false

@@ -1,7 +1,7 @@
 const UserRepo = {
   getUser: () => ({
     plan: "basic",
-    email: "eyal@rollout.io",
+    email: "user1@cloudbees.com",
     playlistCount: 20,
     soundcloud_id: "abcd1234"
   })

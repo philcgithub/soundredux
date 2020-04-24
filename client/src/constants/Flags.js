@@ -9,7 +9,6 @@ const Flags = {
   history: new Rox.Flag(),
   shuffle: new Rox.Flag(),
   repeat: new Rox.Flag(),
-  newflag: new Rox.Flag(),
   jsonNba: new Rox.Variant('j1', ['j1', 'j2', 'j3']),
   startFollowingWord: new Rox.Variant('Follow', ['Follow', 'Start Following', 'Watch Him'])
 };

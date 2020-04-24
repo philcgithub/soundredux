@@ -13,25 +13,20 @@ const Flags = {
   startFollowingWord: new Rox.Variant('Follow', ['Follow', 'Start Following', 'Watch Him'])
 };
 
-//  Register the flags object under the namespace "default"
-Rox.register('default', Flags);
+async function initRollout() {
+  const options = {}
 
-
- const options = {
-    
-    selfManaged: {
-      serverURL: 'http://146.148.30.12:8557',
-      analyticsURL: 'http://146.148.30.12:8558'
-    }
-  }
-
+  // Register the flags with Rollout
+  Rox.register('', Flags);
 
   // Setup the Rollout key
-  Rox.setup('5e98447688b6ed3d83ded7ab', options);
+  await Rox.setup('5ea2b2fcc5d49a44579da526', options);
 
-//Rox.setup('5990c4a1eae09726fa0d6040', { 
-//    devModeSecret: "pFymEevjDCbXWoEZPDqrGT8v" 
-//});
+}
+
+initRollout().then(function() {
+  console.log('Done loading Rollout');
+});
 
 Rox.setCustomStringProperty('plan', () => UserRepo.getUser().plan);
 Rox.setCustomStringProperty('email', () => UserRepo.getUser().email);

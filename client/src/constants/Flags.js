@@ -14,12 +14,19 @@ const Flags = {
   startFollowingWord: new Rox.Variant('Follow', ['Follow', 'Start Following', 'Watch Him'])
 };
 
+const roxContainer = {
+  title: new Rox.Configuration("Welcome"),
+  useCDN: new Rox.Configuration(true),
+  networkTimeout: new  Rox.Configuration(100),
+  opacity: new Rox.Configuration(0.7)
+};
+
 async function initRollout() {
   const options = {}
 
   // Register the flags with Rollout
   Rox.register('', Flags);
-
+  Rox.register('configs', roxContainer);
   // Setup the Rollout key
   await Rox.setup('5ea2b2fcc5d49a44579da526', options);
 

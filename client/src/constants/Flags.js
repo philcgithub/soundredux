@@ -28,7 +28,7 @@ async function initRollout() {
   Rox.register('', Flags);
   Rox.register('configs', roxContainer);
   // Setup the Rollout key
-  await Rox.setup('5ea2b2fcc5d49a44579da526', options);
+  await Rox.setup('5fbbbd683781a16e075d0ad7', options);
 
 }
 
